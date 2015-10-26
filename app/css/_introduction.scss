@@ -1,0 +1,87 @@
+.introduction{
+  width: 100%;
+  height: 800px;
+  display: table;
+  z-index: 20;
+  overflow: hidden;
+  position: relative;
+  background: black;
+  &:before {
+    content: "";
+    position: absolute; //could also be absolute
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+
+.introduction--background{
+  position: absolute;
+  left: 0;
+  top: -10%;
+  width: 100%;
+  height: 120%;
+  z-index: -1;
+  background-image: image-url('header.jpg');
+  background-position: center center;
+  @include background-size(cover);
+
+}
+
+.introduction__container{
+  display: table-cell;
+  vertical-align: middle; 
+  z-index: 20;
+  h3{
+    position: relative;
+    width: 700px;
+    display: block;
+    vertical-align: middle; 
+    text-transform: uppercase;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 20;
+  }
+  h1{
+    position: relative;
+    width: 800px;
+    display: block;
+    // padding: 30px 50px;
+    height: 130px;
+    margin: 0 auto;
+    z-index: 20;
+    text-align: center;
+
+    .h1--border{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 800px;
+      height: 130px;
+    }
+
+    .h1--text{
+      margin: 28px auto 0;
+      display: inline-block;
+      width: 508px;
+      height: 67px;
+      line-height: 70px;
+      @include clearfix();
+    }
+    span{
+      color: white;
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+  .arrow__btn svg{
+    color: white;
+    fill: currentColor;
+  }
+}

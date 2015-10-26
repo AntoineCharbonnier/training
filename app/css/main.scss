@@ -1,0 +1,45 @@
+@import "compass/css3";
+@import "compass/reset";
+@import "compass/utilities";
+
+@include font-face("Proxima", font-files("proximanova-bold-webfont.ttf", "proximanova-bold-webfont.woff", "proximanova-bold-webfont.svg"), "proximanova-bold-webfont.eot", 700);
+@include font-face("Proxima", font-files("proximanova-regular-webfont.ttf", "proximanova-regular-webfont.woff", "proximanova-regular-webfont.svg"), "proximanova-regular-webfont.eot", 400); 
+@include font-face("ProximaItalic", font-files("proximanova-regularitalic-webfont.ttf", "proximanova-regularitalic-webfont.woff", "proximanova-regularitalic-webfont.svg"), "proximanova-regularitalic-webfont.eot", 400); 
+
+
+$service-color : #8e9297;
+$orange-color : #c59a6d;
+$contact-color : #282f35;
+$input-bg-color : #1e2429;
+$textarea-color : #a8a9aa;
+
+$browser-width : 100%;
+$project-img-width : $browser-width/5;
+$project-img-height : $browser-width/5;
+
+
+a:focus, 
+button:focus, 
+input[type=submit]:focus, 
+input[type=button]:focus {
+  outline: none;
+  border: 0;
+}
+
+
+@import "utils";
+@import "parallax";
+@import "introduction";
+@import "meet";
+@import "video";
+@import "service";
+@import "check";
+@import "project";
+@import "partners";
+@import "about";
+@import "tweets";
+@import "contact";
+@import "footer";
+
+@import "burger-nav";
+

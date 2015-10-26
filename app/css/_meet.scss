@@ -1,0 +1,13 @@
+.meet{
+  width: 100%;
+  height: 470px;
+  background-color: white;
+  display: table;
+}
+.meet__container{
+  display: table-cell;
+  vertical-align: middle;
+  p{
+    width: 100%;
+  }
+}

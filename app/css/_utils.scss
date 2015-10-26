@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  pading: 0;
+}
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+  -webkit-font-smoothing: antialiased;
+  min-width: 1170px;
+}
+h1{
+  font : normal 700 60px "Proxima";
+  text-align : center;
+}
+h2{
+  font : normal 700 30px "Proxima";
+  text-transform: uppercase;
+  text-align : center;
+  z-index: 20;
+}
+h3{
+  font : normal 400 18px "Proxima";
+  text-align : center;
+}
+p{
+  font : normal 400 22px "Proxima";
+}
+a{
+  font : normal 700 30px "Proxima";
+  text-transform: uppercase;
+  text-decoration : none;
+  text-align : center;
+  z-index: 20;
+}
+hr{
+   position: relative;
+   padding: 0;
+   margin: 40px auto;
+   height: 0;
+   width: 60px;
+   max-height: 0;
+   font-size: 1px;
+   line-height: 0;
+   clear: both;
+   border: none;
+   border-bottom: 2px solid $orange-color;
+}
+.text--center{
+  position: relative;
+  display: block;
+  margin : 0 auto 0 auto;
+  text-align : center;
+  line-height: 37px;
+  word-spacing: 5px;
+}
+.text--left{
+  position: relative;
+  display: block;
+  margin : 0 auto 0 auto;
+  text-align : left;
+  line-height: 28px;
+}
+.arrow__btn{
+  position: relative;
+  margin: 45px auto 0 auto;
+  display: block;
+  width: 45px;
+  height: 45px;
+  border: 1px solid $orange-color;
+  cursor: pointer;
+}
+.arrow__btn svg{
+  color: $orange-color;
+  fill: currentColor;
+}
+.clear{
+  clear: both;
+  display: block;
+}
+.colored{
+  color : $orange-color;
+}
+
+.hide{
+  display: none !important;
+}

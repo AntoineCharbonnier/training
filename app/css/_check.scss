@@ -1,0 +1,29 @@
+.check{
+  width: 100%;
+  height: 200px;
+  background-color: #282f35;
+  display: table;
+}
+.check__container{
+  display: table-cell;
+  vertical-align: middle; 
+  a{
+    position: relative;
+    display: block;
+    top : -20px;
+    width: 300px !important;
+    color: white;
+    font-size: 14px;
+    // padding: 20px 0px 20px 0px;
+    margin-right: auto;
+    margin-left: auto;
+    letter-spacing: 3px;
+    // border: 1px solid $orange-color;
+    cursor: pointer;
+  }
+  .a--border{
+    svg{
+      top : 16px;
+    }
+  }
+}

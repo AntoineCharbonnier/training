@@ -1,0 +1,196 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    title= "Productor Agency"
+    meta(name="viewport", content="width=device-width, maximum-scale=1, user-scalable=no")
+    meta(name="mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    link(rel="stylesheet", href="css/main.css")
+    
+  body
+
+    .introduction(data-scroll-offset="0")
+      .introduction--background
+      .introduction__container.hide
+        button.navicon.navicon-x(type='button', role='button', aria-label='Toggle Navigation')
+          span.navicon__lines
+        h3 We’ve got the special power
+        hr
+        h1
+          .h1--border
+             include templates/svg/intro-heading-border
+
+          .h1--text
+              span We make websites
+
+        .arrow__btn
+          include templates/svgArrowDown
+
+    .meet(data-scroll-offset="800")
+      .meet__container
+        h2 meet us
+        hr
+        p.text--center At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias<br> excepturi sint occaecati cupiditate non provident.
+        .arrow__btn
+          include templates/svgArrowDown
+            
+   
+    .video(data-scroll-offset="1070")
+      .video--container
+        include templates/svgPlay
+        include templates/svgPause
+        video.fillWidth(loop='')
+          source(src='/video/startuppreview.mp4', type='video/mp4')
+          | Your browser does not support the video tag. I suggest you upgrade your browser.
+
+    .service(data-scroll-offset="1670")
+      .service__container
+        h2 service
+        hr
+        p.text--center At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias<br> excepturi sint occaecati cupiditate non provident.
+        ul
+          li#service--li-1
+            .service__container__svg
+                include templates/svgNoteBook
+            h2 branding
+            p.text--center Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.
+          li#service--li-2
+            .service__container__svg
+                include templates/svgWeb
+            h2 web development
+            p.text--center Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.
+          li#service--li-3
+            .skill__svg
+                include templates/svgPhone
+            h2 app design
+            p.text--center Accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. 
+          .clear        
+      .arrow__btn
+          include templates/svgArrowDown
+    
+    .check(data-scroll-offset="2570")
+      .check__container
+        .a--border
+          include templates/svg/checkout-a-border
+        a check our shop
+
+    .project(data-scroll-offset="2940")
+      .project__container
+        h2 our latest project
+        hr
+        p.text--center At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias<br> excepturi sint occaecati cupiditate non provident.
+        ul
+          li.img--project.project1
+          li.img--project.project2
+          li.img--project.project3
+          li.img--project.project4
+          li.img--project.project5
+        .clear
+        a.behance__btn(href="http://www.behance.com")
+          .project--a--backgroung 
+          p more on behance   
+        .arrow__btn
+          include templates/svgArrowDown
+    
+    .partners(data-scroll-offset="4051")
+      .partners__container
+        .partners--background
+        h2 our partners
+        hr
+        ul
+          li.partners__addidas
+          li.partners__google
+          li.partners__samsung
+          li.partners__microsoft
+        .clear
+
+    .about(data-scroll-offset="4800")
+      .about__container
+        h2 about us
+        hr
+        p.text--center At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias<br> excepturi sint occaecati cupiditate non provident.
+        ul
+          li#about--li-1
+            img(src="img/mike.jpg" alt="profile" class="about__img")
+            h2.people__title Mike
+            p.text--center CEO / Founder
+            hr
+          li#about--li-2
+            img(src="img/mike.jpg" alt="profile" class="about__img")
+            h2.people__title Taylor
+            p.text--center Graphic Designer
+            hr
+          li#about--li-3
+            img(src="img/mike.jpg" alt="profile" class="about__img")
+            h2.people__title James
+            p.text--center Copywriter 
+            hr
+          li#about--li-4
+            h2.hiring__title We are hiring!
+        .clear
+      .arrow__btn
+        include templates/svgArrowDown
+    .clear
+
+    .tweets(data-scroll-offset="5800")
+      .tweets__container
+        ul
+          li.tweets__li-1
+            h2 First tweet
+            hr
+            p.text--center.tweets__text sdfsdfsd fsdf sdf sdf sddddsdfsdfsdf <br> praesentium voluptatum.
+            h2.tweets__author James
+          li.tweets__li-2
+            h2 Second tweet
+            hr
+            p.text--center.tweets__text kjlkljkl jkl jkl jkljk jkl jkl jkl <br> praesentium voluptatum.
+            h2.tweets__author Bond
+          li.tweets__li-3
+            h2 Third tweet
+            hr
+            p.text--center.tweets__text Accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum.
+            h2.tweets__author Mickael
+
+
+    .contact(data-scroll-offset="6390")
+      .contact__container
+        h2 contact us
+        hr
+        ul
+          li.adress__container
+            h2 address
+            p.text--left 908 New Hampshire Ave NW <br>Washington, DC 20037 <br>(202) 463-5141 <br>Doris Cannon
+            ul.social__list
+                li.facebook
+                li.twitter
+                li.vimeo
+                li.behance
+          li.form__container
+            form
+                .input__block
+                    input.name(type='text', placeholder="Name")
+                    input.email(type='text', placeholder="Email")
+                .input__block
+                    input.tel(type='text', placeholder="Telephone")
+                    input.subject(type='text', placeholder="Subject")
+                textarea.msg.input__message= "Message"
+                input.send__btn(type="submit" value="SEND")
+          .clear
+
+    .footer
+      .footer__container
+        h2.footer__rights
+          | 2014 © 
+          span.colored= "Arcadia."
+          | All Rights Reserved.
+
+        .back__btn
+          h2.back__btn__text back to top 
+          include templates/svgArrowUp
+      .clear
+
+    script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js')            
+    script(src="js/main.js")
+    

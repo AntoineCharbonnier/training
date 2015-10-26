@@ -1,0 +1,74 @@
+// Navicon Config
+// ===============================================
+
+$navicon-color: #fff;
+$navicon-transition: .3s;
+$navicon-base: 1rem;
+$navicon-size: 30px;
+$navicon-radius: $navicon-size/14;
+
+
+// Navicon Utilities
+// ===============================================
+
+@mixin navicon_lines {
+  display: inline-block;
+  width: $navicon-size;
+  height: $navicon-size/7;
+  background: $navicon-color;
+  border-radius: $navicon-radius;
+  transition: $navicon-transition;
+}
+
+
+// Navicon Styles
+// ===============================================
+
+.navicon {
+  border: none;
+  background: none;
+  transition: $navicon-transition;
+  cursor: pointer;
+  user-select: none;
+  &:focus { outline: none; }
+}
+
+.navicon__lines {
+  @include navicon_lines;
+  position: absolute;
+  top: 70px;
+  left: 280px;
+  &:before,
+  &:after {
+   @include navicon_lines;
+    position: absolute;
+    left: 0;
+    content: '';
+    transform-origin: $navicon-size/14 center;
+  }
+  &:before { top: $navicon-size/4; }
+  &:after { top: -$navicon-size/4; }
+
+  .is--closed & {transform: scale3d(.8,.8,.8); }
+}
+
+
+// Navicon X
+// ===============================================
+
+.navicon-x {
+  &.is--closed {
+    .navicon__lines {
+      background: transparent;
+      &:before,
+      &:after {
+        transform-origin: 50% 50%;
+        top: 0;
+        width: $navicon-size;
+      }
+      &:before { transform: rotate3d(0, 0, 1, 45deg); }
+      &:after { transform: rotate3d(0, 0, 1, -45deg); }
+    }
+  }
+}
+

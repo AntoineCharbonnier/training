@@ -1,0 +1,52 @@
+.footer{
+  width: 100%;
+  height: 200px;
+  display: block;
+  background-color: $contact-color;
+  border-bottom: 5px solid $orange-color;
+}
+.footer__container{
+  vertical-align: middle; 
+  padding-top: 120px;
+  width: 1170px;
+  margin: 0 auto;
+  h2{
+    padding-top: 0px;
+    font: normal 400 16px/16px "Proxima";
+    color: white;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+  .footer__rights{
+    width: calc(50% - 20px);
+    margin-left: 20px;
+    float: left;
+  }
+
+
+  .back__btn{
+    width: calc(50% - 50px);
+    float: left;
+    text-align: right;
+    margin-right: 50px;
+
+    h2, svg{
+      text-align : right;
+      display: inline;
+    }
+    
+    h2{
+      position: relative;
+      float: none;
+      
+    }
+    svg{
+      // float: left;
+      margin-top: -2.5px;
+      width: 20px;
+      height: 20px;
+      color: $orange-color;
+      fill: currentColor;
+    }
+  }
+}

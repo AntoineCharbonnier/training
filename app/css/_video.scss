@@ -1,0 +1,67 @@
+.video{
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  display: table;
+  z-index: 20;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute; //could also be absolute
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+}
+.video--container{
+  position: absolute;
+  display: table-cell;
+  vertical-align: middle; 
+  z-index: 20;
+  top:0%;
+  left:0%;
+  height:100%;
+  width:100%;
+  overflow: hidden;
+}
+
+.video--container svg{
+  width: 50px;
+  height: 50px;
+  color: white;
+  fill: currentColor;
+  position: absolute;
+  top : 50%;
+  display: block;
+  vertical-align: middle; 
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 20;
+}
+
+#play{
+  left: 50%;
+}
+
+#pause{
+  width: 25px;
+  height: 25px;
+  color: white;
+  fill: currentColor;
+  position: absolute;
+  top : 20px;
+  right: 20px;
+  z-index: 20;
+}
+
+video{
+  position:absolute;
+  z-index:0;
+}
+video.fillWidth {
+  width: 100%;
+}

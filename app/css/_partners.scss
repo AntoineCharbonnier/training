@@ -1,0 +1,76 @@
+.partners{
+  width: 100%;
+  height: 400px ;
+  background-color: black;
+  .partners--background{
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/partners-bg.jpg);
+      background-size: cover;
+      background-position: center center;
+      &:before {
+      content: "";
+      position: absolute; //could also be absolute
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+      background-color: rgba(0,0,0,0.5);
+      }
+  }
+
+  display: table;
+  z-index: 20;
+  overflow: hidden;
+  position: relative;
+  
+}
+.partners__container{
+  display: table-cell;
+  vertical-align: middle; 
+  padding-top: 120px;
+  z-index: 20;
+  hr{
+    padding-top: 30px;
+    z-index: 20;
+  }
+  h2{
+    color : white;
+    z-index: 20;
+    position: relative;
+  }
+  ul{
+    position: relative;
+    display: block;
+    margin: 0px auto 130px auto;
+    width: 100%;
+    text-align : center;
+    z-index: 20;
+  }
+  li{
+    margin:0px 50px 0px 50px;
+    width: 110px;
+    height: 50px;
+    display: inline-block;
+    padding-top: 0px;
+    z-index: 20;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.partners__addidas{
+   background-image: url(../img/addidas.png);
+}
+.partners__google{
+  background-image: url(../img/google.png);
+}
+.partners__samsung{
+  background-image: url(../img/samsung.png);
+}
+.partners__microsoft{
+  background-image: url(../img/microsoft.png);
+}
