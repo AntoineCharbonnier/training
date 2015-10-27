@@ -1,6 +1,6 @@
-# Training project - fisrt project with GSAP
+# Training project
 
-The goal : pratice GSAP library with perfect integration with video background
+The goal : pratice GSAP library with perfect integration with video background resizable
 
 ## INSTALL
 
