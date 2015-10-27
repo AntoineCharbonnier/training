@@ -7,7 +7,7 @@ html(lang="en")
     meta(name="mobile-web-app-capable", content="yes")
     meta(name="apple-mobile-web-app-capable", content="yes")
     meta(name="apple-mobile-web-app-status-bar-style", content="black")
-    link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="./css/main.css")
     
   body
 
@@ -42,7 +42,7 @@ html(lang="en")
         include templates/svgPlay
         include templates/svgPause
         video.fillWidth(loop='')
-          source(src='/video/startuppreview.mp4', type='video/mp4')
+          source(src='./video/startuppreview.mp4', type='video/mp4')
           | Your browser does not support the video tag. I suggest you upgrade your browser.
 
     .service(data-scroll-offset="1670")
@@ -113,17 +113,17 @@ html(lang="en")
         p.text--center At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis<br> praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias<br> excepturi sint occaecati cupiditate non provident.
         ul
           li#about--li-1
-            img(src="img/mike.jpg" alt="profile" class="about__img")
+            img(src="./img/mike.jpg" alt="profile" class="about__img")
             h2.people__title Mike
             p.text--center CEO / Founder
             hr
           li#about--li-2
-            img(src="img/mike.jpg" alt="profile" class="about__img")
+            img(src="./img/mike.jpg" alt="profile" class="about__img")
             h2.people__title Taylor
             p.text--center Graphic Designer
             hr
           li#about--li-3
-            img(src="img/mike.jpg" alt="profile" class="about__img")
+            img(src="./img/mike.jpg" alt="profile" class="about__img")
             h2.people__title James
             p.text--center Copywriter 
             hr
@@ -192,5 +192,5 @@ html(lang="en")
       .clear
 
     script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js')            
-    script(src="js/main.js")
+    script(src="./js/main.js")
     

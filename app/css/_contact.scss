@@ -30,11 +30,11 @@
         color: white;
         text-align : left;
         &:before{
-          content:url("../img/here.png"); 
-          position:relative; 
-          z-index:100000; 
-          left:-20px;
-          top:0px;
+          content: url("../img/here.png"); 
+          position: relative; 
+          z-index: 100000; 
+          left: -20px;
+          top: 0px;
         }
       }
       p{
